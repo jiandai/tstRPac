@@ -1,5 +1,6 @@
 # Description
-This is an exercise to test out the old school ```.C``` interface for R
+- An exercise to use old-school ```.C``` interface in R. Ref: http://www.biostat.jhsph.edu/~rpeng/docs/interface.pdf
+- An exercise to use ```.C``` interface to call CUDA functionality. Ref: https://devblogs.nvidia.com/parallelforall/accelerate-r-applications-cuda/
 
 # Git repo url:
 https://github.com/jiandai/tstRPac
@@ -9,7 +10,7 @@ https://github.com/jiandai/tstRPac
 - Run ```R CMD SHLIB hello.c```
 which creates both hello.o and hello.so in the same folder in the unix env
 
-- Unfortunately ```R CMD SHLIB``` does not work on windows for my case (status 127)
+- Unfortunately ```R CMD SHLIB``` does not work (in a straightforward way) on windows for my case (status 127)
 
 - Start R and run
 ```
@@ -23,7 +24,7 @@ Hello!
 [1] 4
 ```
 
-Interestingly, there is a diff in the output by running
+Note that there is a diff in the output by running
 ```
 > .C('hello',4)
 [[1]]
@@ -46,5 +47,3 @@ Hello!
 [[1]]
 [1] 3
 ```
-# Ref:
-http://www.biostat.jhsph.edu/~rpeng/docs/interface.pdf
