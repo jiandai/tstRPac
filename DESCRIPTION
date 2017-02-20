@@ -1,0 +1,9 @@
+Package: tstRPac
+Title: Package to test R packaging
+Version: 0.0.0.9000
+Authors@R: person("Jian", "Dai", email = "daij12@gene.com", role = c("aut", "cre"))
+Description: First exercise to package R code
+Depends: R (>= 3.2.4)
+License: TBD
+Encoding: UTF-8
+LazyData: true
